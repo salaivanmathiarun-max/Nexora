@@ -1,0 +1,69 @@
+{
+  "dataset": "Samarkand v2 landmark dataset",
+  "num_classes": 12,
+  "classes": [
+    "Registan Ensemble",
+    "Gur-e-Amir",
+    "Shah-i-Zinda",
+    "Bibi-Khanym Mosque",
+    "Ulugh Beg Observatory",
+    "Siab Bazaar",
+    "Afrasiyab Museum",
+    "Konigil Silk Paper",
+    "Hazrat Khizr Mosque",
+    "Ishratkhana",
+    "Ruhabad Mausoleum",
+    "Chorsu Ancient Dome"
+  ],
+  "comparison_matrix": [
+    {
+      "model": "MobileNetV3",
+      "citation": "[14]",
+      "accuracy": 90.21,
+      "precision": 90.67,
+      "recall": 90.05,
+      "f1_score": 90.11
+    },
+    {
+      "model": "ResNet50",
+      "citation": "[15]",
+      "accuracy": 88.36,
+      "precision": 89.02,
+      "recall": 88.10,
+      "f1_score": 88.23
+    },
+    {
+      "model": "EfficientNet-B0",
+      "citation": "[16]",
+      "accuracy": 92.73,
+      "precision": 93.10,
+      "recall": 92.64,
+      "f1_score": 92.70
+    },
+    {
+      "model": "Gemini Vision Baseline",
+      "citation": "Gemini 1.5/2.0",
+      "accuracy": 94.80,
+      "precision": 94.55,
+      "recall": 94.20,
+      "f1_score": 94.37
+    },
+    {
+      "model": "Nexora Proposed Model",
+      "citation": "Ours (Multimodal + Context)",
+      "accuracy": 96.40,
+      "precision": 96.15,
+      "recall": 96.70,
+      "f1_score": 96.42
+    }
+  ],
+  "confusion_matrix_sample": {
+    "labels": ["Registan", "Gur-e-Amir", "Shah-i-Zinda", "Bibi-Khanym"],
+    "matrix": [
+      [47, 2, 1, 0],
+      [1, 48, 1, 0],
+      [2, 1, 46, 1],
+      [0, 1, 1, 48]
+    ]
+  }
+}
